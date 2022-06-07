@@ -1,0 +1,71 @@
+.hero {
+   margin-top: 303px;
+}
+.hero__content {
+
+   .hero__heading {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 63px;
+      letter-spacing: 0.15em;
+   }
+   .hero__text {
+      font-family: 'Caveat', cursive;
+      text-align: right;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 23px;
+      letter-spacing: 0.05em;
+      border-bottom: 1px solid $green-color;
+
+      &:nth-child(2) {
+         margin-top: 16px;
+         width: 129px;
+         margin-left: 256px;
+      }
+      &:nth-child(4) {
+         margin-top: 2px;
+         width: 263px;
+         margin-left: 60px;
+      }
+      &:nth-child(6) {
+         margin-top: 1px;
+         width: 247px;
+         margin-left: 0;
+      }
+   }
+}
+.hero__btn {
+   margin-top: 27px;
+   transform: skew(-20deg);
+   border: 1px solid $green-color;
+   border-radius: 5px;
+   padding: 9px 30px;
+   width: 247px;
+
+   &:hover {
+      background: rgba(31, 251, 67, 0.1);
+      transition: background 0.2s ease;
+   }
+   p {
+      font-family: $accent-font;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.01em;
+      transform: skew(20deg);
+   }
+}
+
+.hero__fon {
+   z-index: -1;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+
+   .hero__img {
+      width: 100%;
+      object-fit: cover;
+   }
+}

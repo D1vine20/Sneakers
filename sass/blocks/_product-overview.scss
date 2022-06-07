@@ -1,0 +1,108 @@
+.product-overview {
+   margin: 100px 0;
+   font-family: $accent-font;
+   color: #000;
+}
+.product-overview__title {
+   color: rgba(0, 0, 0, 0.7);
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+}
+.product-overview__columns {
+   margin-top: 25px;
+   display: flex;
+
+   .product-overview__img img {
+      border-radius: 10px;
+   }
+}
+.product-overview__content {
+   margin-left: 25px;
+
+   .overview__title {
+      width: 273px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-transform: uppercase;
+   }
+   .overview__price {
+      margin-top: 21px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgba(0, 0, 0, 0.7);
+   }
+   .overview__prices {
+      margin-top: 27px;
+      display: flex;
+      justify-content: space-between;
+
+      .overview__oldprice {
+         font-size: 18px;
+         line-height: 22px;
+         text-decoration-line: line-through;
+         color: rgba(0, 0, 0, 0.7);
+      }
+
+      .overview__newprice {
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 29px;
+         color: rgba(0, 0, 0, 0.7);
+      }
+   }
+
+   .overview__size {
+      margin-top: 31px;
+      color: rgba(0, 0, 0, 0.7);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+   }
+
+   .overview__rows {
+      margin-top: 31px;
+      display: grid;
+      grid-template-columns: repeat(4, 71px);
+      grid-gap: 24px 24px;
+
+      .overview__text {
+         text-align: center;
+         color: rgba(0, 0, 0, 0.7);
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 29px;
+         padding: 11px 21px;
+         border: 1px solid rgba(247, 56, 89, 0.5);
+         border-radius: 10px;
+         transition: background 0.2s ease;
+         
+         &:hover {
+            background: rgba(247, 56, 89, 0.25);
+            transition: background 0.2s ease;
+         }
+      }
+   }
+   .overview__btn {
+      margin-top: 68px;
+
+      a {
+         color: #686868;
+         font-weight: 700;
+         font-size: 24px;
+         line-height: 29px;
+         padding: 42px 25px;
+         background: linear-gradient(95.65deg, rgba(0, 0, 0, 0.8) 0%, #000000 100%);
+         border-radius: 10px;
+         text-transform: uppercase;
+         transition: color 0.2s ease;
+
+         &:hover {
+            color: #fff;
+            transition: color 0.2s ease;
+         }
+      }
+   }
+}

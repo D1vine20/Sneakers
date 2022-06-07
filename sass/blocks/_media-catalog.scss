@@ -1,0 +1,142 @@
+// Catalog
+@media (max-width: 768px) {
+
+   // Header 
+   .header-other {
+      padding: 10px 0;
+   }
+
+   .header__logo {
+      font-size: 32px;
+   }
+
+   .nav__list {
+
+      .nav__item+.nav__item {
+         margin-left: 15px;
+      }
+
+      .nav__link {
+         font-size: 14px;
+      }
+   }
+
+   .header__login {
+
+      p {
+         font-size: 14px;
+         padding: 5px 15px;
+      }
+   }
+
+   .header__basket {
+      display: none;
+   }
+
+   // Categories
+   .categories__title {
+      font-size: 20px;
+
+      &::before {
+         width: 65px;
+         right: 45px;
+      }
+
+      &::after {
+         width: 65px;
+         left: -20px;
+      }
+   }
+
+   .categories__rows {
+      margin-top: 25px;
+      grid-template-columns: repeat(4, 165px);
+      grid-template-rows: repeat(2, 115px);
+   }
+
+   .categories-block {
+
+      .categories-block__text {
+         font-size: 24px;
+
+         &::before {
+            top: 0;
+         }
+      }
+   }
+
+   // All Categories
+   .all__title {
+      font-size: 20px;
+
+      &::before {
+         width: 65px;
+         right: 88px;
+      }
+
+      &::after {
+         width: 65px;
+         left: -29px;
+      }
+   }
+
+   .all__rows {
+      grid-template-columns: repeat(4, 165px);
+   }
+
+   .all-block {
+      .all-block__content {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: 320px) {
+
+   // Hedader
+   .header-menu {
+      display: flex;
+   }
+
+   // Categories 
+   .categories {
+      margin-top: 25px;
+   }
+
+   .categories__title {
+      margin-left: 15px;
+   }
+
+   .categories__rows {
+      grid-template-columns: repeat(2, 135px);
+      grid-template-rows: repeat(2, 85px);
+   }
+
+   .categories-block {
+      .categories-block__text {
+         font-size: 20px;
+         line-height: 28px;
+
+         &::before {
+            right: -9px;
+         }
+
+         &::after {
+            left: -9px;
+         }
+      }
+   }
+
+   // All Categories
+   .all {
+      margin-top: 25px;
+   }
+
+   .all__title {
+      margin-left: 25px;
+   }
+
+   .all__rows {
+      grid-template-columns: repeat(2, 135px);
+   }
+}

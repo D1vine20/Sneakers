@@ -1,0 +1,29 @@
+// Base
+@import "./base/base";
+@import "./base/reset";
+@import "./base/vars";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/new-products";
+@import "./blocks/reviews";
+@import "./blocks/overlook";
+@import "./blocks/footer";
+
+// Other pages 
+@import "./blocks/categories";
+@import "./blocks/all";
+@import "./blocks/product-overview";
+@import "./blocks/registration";
+@import "./blocks/basket";
+
+// Adaptive 
+@import "./blocks/media-landing";
+@import "./blocks/media-catalog";
+@import "./blocks/media-product-overview";
+@import "./blocks/media-registration";
+@import "./blocks/media-basket";
+
+// Burger 
+@import "./blocks/mobile";

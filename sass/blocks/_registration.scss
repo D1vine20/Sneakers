@@ -1,0 +1,60 @@
+.registration {
+   margin: 133px 0;
+}
+.registration-block {
+   margin: 0 auto;
+   border: 1px solid $green-color;
+   border-radius: 25px;
+   width: 400px;
+   text-align: center;
+
+   .registration-block__title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: 0.05em;
+      padding: 32px 120px;
+      background: linear-gradient(287.56deg, #000000 0%, rgba(0, 0, 0, 0.8) 100%);
+      border-radius: 25px 25px 0px 0px;
+   }
+   .registration-block__fields {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 120px 25px 115px;
+
+      .registration-block__field {
+         font-family: $accent-font;
+         font-size: 13px;
+         text-align: center;
+         padding: 15px 10px;
+         border: 1px solid $green-color;
+         border-radius: 25px;
+      }
+      .registration-block__field + .registration-block__field {
+         margin-top: 15px;
+      }
+   }
+   .registration-block__text {
+      color: #1A85F8;
+      font-size: 20px;
+   }
+   .registration-block__btn {
+      margin: 20px 0px 25px 0px;
+
+      a {
+         color: #686868;
+         font-family: $accent-font;
+         font-weight: 700;
+         font-size: 18px;
+         padding: 15px;
+         background: linear-gradient(287.56deg, #000000 0%, rgba(0, 0, 0, 0.8) 100%);
+         border-radius: 10px;
+         transition: color 0.2s ease;
+      
+         &:hover {
+            color: #fff;
+            transition: color 0.2s ease;
+         }
+      }
+   }
+}

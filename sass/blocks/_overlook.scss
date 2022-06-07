@@ -1,0 +1,61 @@
+.overlook {
+   margin: 100px 0;
+}
+.overlook__columns {
+   margin-top: 50px;
+   display: grid;
+   grid-template-columns: repeat(4, 260px);
+   grid-template-rows: repeat(2, 260px);
+   grid-template-areas: 
+   "nike1 nike1 nike2 nike3"
+   "nike1 nike1 nike4 nike4";
+   grid-gap: 24px;
+
+   .overlook-video {
+      grid-area: nike1;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+
+      .overlook__overlay {
+         position: absolute;
+         z-index: 1;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         transition: opacity 0.3s ease;
+         
+         &.hidden {
+            opacity: 0;
+         }
+      }
+      .overlook__img:hover {
+         transform: scale(1.0);
+      }
+      .overlook__video {
+         position: absolute;
+         max-height: 100%;
+         top: 0;
+         left: -200px;
+      }
+   }
+   .overlook__img {
+      filter: brightness(70%);
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+         transform: scale(1.04);
+         transition: transform 0.3s ease;
+      }
+      &:nth-child(2) {
+         grid-area: nike2;
+      }
+      &:nth-child(3) {
+         grid-area: nike3;
+      }
+      &:nth-child(4) {
+         grid-area: nike4;
+      }
+   }
+}
