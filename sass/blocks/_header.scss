@@ -90,39 +90,4 @@
    }
 }
 
-.header-menu-catalog {
-   position: relative;
-   z-index: 999;
-   display: none;
-   justify-content: center;
-   align-items: center;
-}
-
-.header-menu__icon-catalog {
-   display: block;
-   position: relative;
-   width: 15px;
-   height: 1px;
-   background-color: #fff;
-
-   &::after,
-   &::before {
-      position: absolute;
-      content: '';
-      width: 15px;
-      height: 1px;
-      background-color: #fff;
-      transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s;
-   }
-
-   &::before {
-      left: 0;
-      top: -5px;
-   }
-
-   &::after {
-      left: 0;
-      top: 5px;
-   }
-}
 

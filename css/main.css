@@ -178,33 +178,6 @@ legend {
     left: 0;
     top: 5px; }
 
-.header-menu-catalog {
-  position: relative;
-  z-index: 999;
-  display: none;
-  justify-content: center;
-  align-items: center; }
-
-.header-menu__icon-catalog {
-  display: block;
-  position: relative;
-  width: 15px;
-  height: 1px;
-  background-color: #fff; }
-  .header-menu__icon-catalog::after, .header-menu__icon-catalog::before {
-    position: absolute;
-    content: '';
-    width: 15px;
-    height: 1px;
-    background-color: #fff;
-    transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s; }
-  .header-menu__icon-catalog::before {
-    left: 0;
-    top: -5px; }
-  .header-menu__icon-catalog::after {
-    left: 0;
-    top: 5px; }
-
 .hero {
   margin-top: 303px; }
 
@@ -828,6 +801,9 @@ legend {
         color: #fff;
         transition: color 0.2s ease; }
 
+@media (max-width: 1440px) {
+  .new-products {
+    margin-top: 150px; } }
 @media (max-width: 768px) {
   .heading {
     font-size: 40px;
